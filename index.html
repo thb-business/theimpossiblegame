@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Impossible Test (Web Game)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container" class="inactive">
+        <h1>Welcome to the Test Chamber.</h1>
+        <p>Your goal is to click the RED DOOR.</p>
+
+        <button id="red-door" class="test-element">
+            [THE RED DOOR]
+        </button>
+
+        <div id="useless-terminal" class="test-element">
+            TERMINAL: DO NOT USE
+        </div>
+
+        <div id="floor-switch"></div> 
+    </div>
+
+    <div id="welcome-screen" class="overlay">
+        <div class="overlay-content">
+            <h2>THE IMPOSSIBLE TEST: BETA</h2>
+            <p>Your mission is simple: **Reach and click the Red Door.**</p>
+            <p>Every other action may lead to an unexpected, secret ending.</p>
+            <button id="start-button">BEGIN THE TEST</button>
+        </div>
+    </div>
+
+    <div id="ending-screen" class="overlay hidden">
+        <div class="overlay-content ending-content">
+            <h2 id="ending-title"></h2>
+            <p id="ending-description"></p>
+            <p class="reset-prompt">Resetting in 5 seconds...</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
